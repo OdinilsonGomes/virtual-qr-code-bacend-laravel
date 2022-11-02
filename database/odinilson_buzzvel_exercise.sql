@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2022 at 01:24 PM
+-- Generation Time: Nov 02, 2022 at 01:32 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -41,19 +41,7 @@ CREATE TABLE `cards` (
 --
 
 INSERT INTO `cards` (`id`, `name`, `linkedin_url`, `github_url`, `updated_at`, `created_at`) VALUES
-(1, 'john', 'http:\\\\www.linkedin.com', 'www.github.com', '2022-10-31 12:28:46', '2022-10-31 12:28:46'),
-(2, 'jonh', 'www.linkedin.com', 'www.github.com', '2022-10-31 13:27:54', '2022-10-31 13:27:54'),
-(3, 'jonh', 'www.linkedin.com', 'www.github.com', '2022-10-31 15:44:37', '2022-10-31 15:44:37'),
-(4, 'jonh', 'www.linkedin.com', 'www.github.com', '2022-10-31 16:19:13', '2022-10-31 16:19:13'),
-(5, 'jonh', 'www.linkedin.com', 'www.github.com', '2022-10-31 16:21:26', '2022-10-31 16:21:26'),
-(6, 'jonh2', 'linkedin', 'github', '2022-11-02 00:56:38', '2022-11-02 00:56:38'),
-(7, 'react name', 'linkden react', 'github react', '2022-11-02 01:10:15', '2022-11-02 01:10:15'),
-(14, 'odinilsin', 'yeyjhg', 'srdjg', '2022-11-02 01:51:51', '2022-11-02 01:51:51'),
-(15, 'wdsc', 'dscz', 'efvsc', '2022-11-02 01:55:15', '2022-11-02 01:55:15'),
-(16, 'ed', 'rdfsc', 'fdsc', '2022-11-02 01:56:46', '2022-11-02 01:56:46'),
-(17, 'ykuyhik', 'artd', 'zdfxg', '2022-11-02 02:01:34', '2022-11-02 02:01:34'),
-(18, 'jhfgj', 'sgf', 'sfgc', '2022-11-02 02:02:41', '2022-11-02 02:02:41'),
-(19, 'naylton', 'wedws', 'dsdw', '2022-11-02 11:24:06', '2022-11-02 11:24:06');
+(1, 'Odinilson', 'https://www.linkedin.com/in/odinilson-gomes-08b71b214/', 'https://github.com/OdinilsonGomes', '2022-10-31 12:28:46', '2022-10-31 12:28:46');
 
 -- --------------------------------------------------------
 
