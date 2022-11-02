@@ -39,13 +39,25 @@ class CardController extends Controller
     {
         $card= new Card();
         // Get Request data
+        if(!isset($request->name)){
+            return response()->json('Error: Name can`t be null',450);
+        }else if(!isset($request->linkedin_url)){
+            return response()->json('Error: Linkedin URL can`t be null', 450);
+        }else if(!isset($request->github_url)){
+            return response()->json('Error: Github URL can`t be null', 450);
+        }
+        $exist = \App\Models\Card::where('name', 'Like',"$request->name")->get();
+        if(count($exist)>0){
+            return response()->json('Error: This name already exists. Names should be unique', 450);
+        }
         $card->name = $request->name;
         $card->linkedin_url = $request->linkedin_url;
         $card->github_url = $request->github_url;
         // Save data in to Data Base
         $card->save();
         //return QrCode::size(100)->generate('http://localhost:3000/'.$card->name);
-        return 'http://localhost:3000/scan/'.$card->name;
+        $url='http://localhost:3000/scan/'.$card->name;
+        return response()->json($url,200);
 
     }
 
