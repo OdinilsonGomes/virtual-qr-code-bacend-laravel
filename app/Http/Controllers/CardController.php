@@ -55,9 +55,9 @@ class CardController extends Controller
         $card->github_url = $request->github_url;
         // Save data in to Data Base
         $card->save();
-        //return QrCode::size(100)->generate('http://localhost:3000/'.$card->name);
-        $url='http://localhost:3000/scan/'.$card->name;
-        return response()->json($url,200);
+        // frontend URL
+        //$url='http://localhost:3000/'.$card->name;
+        return response()->json($card,200);
 
     }
 
@@ -69,7 +69,7 @@ class CardController extends Controller
      */
     public function show($name)
     {
-        //
+        //select cards on data base
         $card = \App\Models\Card::where('name', 'Like',"$name")->get();
         return response()->json($card,200);
     }
